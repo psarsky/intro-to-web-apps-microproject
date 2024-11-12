@@ -1,0 +1,142 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Common */
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color-1);
+}
+
+:root {
+    --background-color: #FAF6E3;
+    --text-color-1: #2A3663;
+    --primary-color: #B59F78;
+    --secondary-color: #D8DBBD;
+}
+
+.dark-mode {
+    --background-color: #3B3030;
+    --text-color-1: #FFF0D1;
+    --primary-color: #664343;
+    --secondary-color: #795757;
+}
+
+/*.dark-mode {
+    --background-color: #2C3639;
+    --text-color-1: #DCD7C9;
+    --primary-color: #3F4E4F;
+    --secondary-color: #A27B5C;
+}*/
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 1em 0;
+    text-align: center;   
+}
+
+.theme-button button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: 1px solid var(--text-color-1);
+    color: var(--text-color-1);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-button button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#clock {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: var(--secondary-color);
+}
+
+.nav-item {
+    color: var(--text-color-1);
+    padding: 1em;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 1em 0;
+}
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.video-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    border: none;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}

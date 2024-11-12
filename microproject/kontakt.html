@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistrzostwa AGH we Flanki</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="theme-button">
+            <button onclick="toggleTheme()">Przełącz motyw</button>
+        </div>
+        <h1>Mistrzostwa AGH we Flanki</h1>
+        <time id="clock"></time>
+    </header>
+    <nav>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="kontakt.html">Kontakt</a>
+        <a class="nav-item" href="galeria.html">Galeria</a>
+    </nav>
+    <main>
+        <h2>Kontakt</h2>
+        <form id="contactForm" action="#" method="post">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="Wpisz swój e-mail" required>
+
+            <label for="temat">Temat wiadomości:</label>
+            <select id="temat" name="temat">
+                <option>Zapisy na zawody</option>
+                <option>Pytania organizacyjne</option>
+                <option>Współpraca</option>
+            </select>
+
+            <label for="wiadomosc">Wiadomość:</label>
+            <textarea id="wiadomosc" name="wiadomosc" placeholder="Napisz swoją wiadomość" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </main>
+    <footer>
+        <p>Autor: Jakub Psarski</p>
+    </footer>
+</body>
+</html>
