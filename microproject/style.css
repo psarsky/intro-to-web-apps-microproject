@@ -67,6 +67,7 @@ nav {
     display: flex;
     justify-content: center;
     background: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 .nav-item {
@@ -83,11 +84,19 @@ h2 {
     text-align: center;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 footer {
     display: flex;
     justify-content: center;
     background-color: var(--primary-color);
     padding: 1em;
+    margin-top: 10px;
 }
 
 /* Home */
@@ -96,8 +105,10 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 80%;
+    max-width: 600px;
     background-color: var(--secondary-color);
-    margin: 40px;
+    margin: 20px;
     padding: 20px;
 }
 
@@ -105,10 +116,19 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
 }
 
 .question {
+    font-family: 'Poppins';
     background-color: var(--background-color);
     color: var(--text-color);
     cursor: pointer;
@@ -126,9 +146,15 @@ footer {
 
 .panel {
     padding: 0 18px;
-    background-color: white;
-    display: none;
+    background-color: var(--background-color);
+    max-height: 0;
     overflow: hidden;
+    text-wrap: wrap;
+    transition: max-height 0.2s ease-out;
+}
+
+.link {
+    color: var(--primary-color)
 }
 
 /* Gallery */
