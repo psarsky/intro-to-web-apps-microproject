@@ -79,20 +79,56 @@ nav {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-main {
-    padding: 20px;
-}
-
 h2 {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 footer {
     display: flex;
     justify-content: center;
     background-color: var(--primary-color);
-    padding: 1em 0;
+    padding: 1em;
+}
+
+/* Home */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    margin: 40px;
+    padding: 20px;
+}
+
+.prizes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.question {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .question:hover {
+    background-color: var(--primary-color);
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
 }
 
 /* Gallery */
