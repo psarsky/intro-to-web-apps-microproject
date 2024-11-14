@@ -1,28 +1,28 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* Common */
 body {
-    font-family: 'Poppins';
-    margin: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
+	font-family: "Poppins";
+	margin: 0;
+	background-color: var(--background-color);
+	color: var(--text-color);
 }
 
 :root {
-    --background-color: #FAF6E3;
-    --text-color: #2A3663;
-    --primary-color: #B59F78;
-    --secondary-color: #D8DBBD;
-    --field-color: #edf0d8;
+	--background-color: #faf6e3;
+	--text-color: #2a3663;
+	--primary-color: #b59f78;
+	--secondary-color: #d8dbbd;
+	--field-color: #edf0d8;
 }
 
 .dark-mode {
-    --background-color: #3B3030;
-    --text-color: #FFF0D1;
-    --primary-color: #664343;
-    --secondary-color: #795757;
-    --field-color: #9e7979;
+	--background-color: #3b3030;
+	--text-color: #fff0d1;
+	--primary-color: #664343;
+	--secondary-color: #795757;
+	--field-color: #9e7979;
 }
 
 /*.dark-mode {
@@ -33,196 +33,230 @@ body {
 }*/
 
 header {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary-color);
-    padding: 1em 0;
-    text-align: center;   
+	display: flex;
+	justify-content: center;
+	background-color: var(--primary-color);
+	padding: 1em 0;
+	text-align: center;
 }
 
 .theme-button button {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: none;
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: none;
+	border: 1px solid var(--text-color);
+	color: var(--text-color);
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 5px;
 }
 
 .theme-button button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 #clock {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-weight: bold;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-weight: bold;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background: var(--secondary-color);
-    margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	background: var(--secondary-color);
+	margin-bottom: 20px;
 }
 
 .nav-item {
-    color: var(--text-color);
-    padding: 1em;
-    text-decoration: none;
+	color: var(--text-color);
+	padding: 1em;
+	text-decoration: none;
 }
 
 .nav-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 h2 {
-    text-align: center;
+	text-align: center;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    background-color: var(--primary-color);
-    padding: 1em;
-    margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	background-color: var(--primary-color);
+	padding: 1em;
+	margin-top: 10px;
 }
 
 /* Home */
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 80%;
-    max-width: 600px;
-    background-color: var(--secondary-color);
-    margin: 20px;
-    padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+	max-width: 600px;
+	background-color: var(--secondary-color);
+	margin: 20px;
+	padding: 20px;
+    border-radius: 5px;
+}
+
+.intro {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .prizes {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
 }
 
 .faq {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 80%;
 }
 
 .question {
-    font-family: 'Poppins';
-    background-color: var(--background-color);
-    color: var(--text-color);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+	font-family: "Poppins";
+	background-color: var(--background-color);
+	color: var(--text-color);
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
 }
 
-.active, .question:hover {
-    background-color: var(--primary-color);
+.active,
+.question:hover {
+	background-color: var(--primary-color);
 }
 
 .panel {
-    padding: 0 18px;
-    background-color: var(--background-color);
-    max-height: 0;
-    overflow: hidden;
-    text-wrap: wrap;
-    transition: max-height 0.2s ease-out;
+	padding: 0 18px;
+	background-color: var(--background-color);
+	max-height: 0;
+	overflow: hidden;
+	text-wrap: wrap;
+	transition: max-height 0.2s ease-out;
 }
 
 .link {
-    color: var(--primary-color)
+	color: var(--primary-color);
 }
 
 /* Gallery */
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
 }
 
 .gallery img {
-    width: 20%;
-    height: auto;
-    border-radius: 5px;
+	width: 20%;
+	height: auto;
+	border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 1px 1px 15px;
 }
 
 .video-container {
-    text-align: center;
-    margin-top: 20px;
+    margin: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 2px 20px;
+}
+
+#player {
+    border-radius: 5px;
 }
 
 /* Form */
 form {
-    max-width: 500px;
-    margin: 20px auto;
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+	max-width: 500px;
+	margin: 20px;
+	background-color: var(--secondary-color);
+	padding: 20px;
+	border-radius: 5px;
 }
 
-form select, form button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: var(--field-color);
-    border: 1px solid var(--field-color);
-    border-radius: 5px;
+form input,
+form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	background-color: var(--field-color);
+	border: 1px solid var(--field-color);
+	border-radius: 5px;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    background-color: var(--field-color);
-    border: 1px solid var(--field-color);
-    border-radius: 5px;
+form textarea {
+    resize: none;
 }
 
-form button {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+form select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: var(--field-color);
+	border: 1px solid var(--field-color);
+	border-radius: 5px;
 }
 
-form button:hover {
-    background-color: var(--background-color);
+.submit {
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
 }
 
-#topic, input, textarea {
-    color: var(--text-color);
+.submit:hover {
+	background-color: var(--field-color);
+}
+
+#topic,
+input,
+textarea {
+	color: var(--text-color);
 }
 
 ::placeholder {
-    color: var(--text-color);
-    opacity: 0,1;
-    }
+	color: var(--text-color);
+	opacity: 0.5;
+}
+
+.counter, .error {
+    text-align: right;
+    font-size: 0.7em;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
