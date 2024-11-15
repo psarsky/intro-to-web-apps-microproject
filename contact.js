@@ -44,8 +44,8 @@ form.addEventListener("submit", (e) => {
 		errorFlag = true;
 	}
 
-    if (!errorFlag) {
-        chars.textContent = "0";
+	if (!errorFlag) {
+		chars.textContent = "0";
 		document.getElementById("contact-form").reset();
 		alert("Formularz został pomyślnie wysłany!");
 	}

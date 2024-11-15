@@ -253,7 +253,7 @@ footer {
 }
 
 .video-container {
-    margin: 3vw;
+	margin: 3vw;
 	width: 60%;
 	display: flex;
 	flex-direction: column;
@@ -269,7 +269,7 @@ footer {
 
 #player {
 	box-shadow: rgba(0, 0, 0, 0.6) 0.2vw 0.2vw 2vw;
-    border-radius: 5px;
+	border-radius: 5px;
 }
 
 /* Form */
@@ -343,7 +343,7 @@ textarea {
 	}
 
 	.home {
-	border-radius: 18px;
+		border-radius: 18px;
 	}
 
 	.theme-button button {
@@ -366,7 +366,7 @@ textarea {
 	}
 
 	.home {
-	border-radius: 15px;
+		border-radius: 15px;
 	}
 
 	.theme-button button {
