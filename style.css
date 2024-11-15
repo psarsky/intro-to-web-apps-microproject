@@ -397,6 +397,15 @@ textarea {
 		height: 6vw;
 	}
 
+	.gallery {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.gallery figure {
+		width: 80%;
+	}
+
 	form {
 		border-radius: 10px;
 	}
