@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="style.css" type="text/css"/>
         <link rel="icon" href="assets/harnas.png" type="image/x-icon">
 		<script defer src="script.js"></script>
-        <script src="gallery.js"></script>
+        <script defer src="gallery.js"></script>
 	</head>
 
 	<body>
@@ -29,17 +29,36 @@
 			<h2>Galeria</h2>
 
 			<section class="gallery">
-				<img src="assets/flanki1.jpg" alt="Zdjęcie z zawodów" />
-				<img src="assets/flanki2.jpg" alt="Zdjęcie drużynowe" />
-				<img src="assets/flanki3.jpg" alt="Flanki w akcji" />
-				<img src="assets/flanki4.jpg" alt="Publiczność" />
+				<figure>
+					<img src="assets/zawody.jpg" alt="Zdjęcie z zawodów" onclick="openOverlay(this)" />
+					<figcaption>Zdjęcie z zawodów</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/druzyna.jpg" alt="Zdjęcie drużynowe" onclick="openOverlay(this)" />
+					<figcaption>Zdjęcie drużynowe</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/flanki_w_akcji.jpg" alt="Flanki w akcji" onclick="openOverlay(this)" />
+					<figcaption>Flanki w akcji</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/publicznosc.jpg" alt="Publiczność" onclick="openOverlay(this)" />
+					<figcaption>Publiczność</figcaption>
+				</figure>
 			</section>
 
 			<section class="video-container">
 				<video id="player" width="100%" controls>
-					<source src="assets/flanki.mp4" type="video/mp4"/>
+					<source src="assets/flanki.mp4" type="video/mp4" alt="Film przedstawiający zasady gry we flanki"/>
 				</video>
+				<figcaption>Film przedstawiający zasady gry we flanki</figcaption>
 			</section>
+
+			<span id="overlay">
+				<span class="close-btn" onclick="closeOverlay()">&times;</span>
+				<img id="overlay-img" src="" alt="">
+				<p id="overlay-caption"></p>
+			</span>
 		</main>
 
 		<footer>

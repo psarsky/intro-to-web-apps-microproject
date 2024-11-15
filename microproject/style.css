@@ -113,7 +113,7 @@ footer {
 	max-width: 800px;
 	background-color: var(--secondary-color);
 	margin: 2vw;
-	padding: 2vw;
+	padding: 3vw;
 	border-radius: 20px;
 }
 
@@ -178,23 +178,98 @@ footer {
 	gap: 2vw;
 }
 
+.gallery figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+}
+
+.gallery figcaption {
+	margin-top: 5px;
+	font-size: 0.9em;
+	color: var(--text-color);
+	text-align: center;
+}
+
 .gallery img {
-	width: 20%;
-	height: auto;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
 	border-radius: 5px;
 	box-shadow: rgba(0, 0, 0, 0.4) 0.1vw 0.1vw 1.5vw;
 }
 
+.gallery img:hover {
+	transform: scale(1.05);
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#overlay img {
+	max-width: 80%;
+	max-height: 80%;
+	border-radius: 5px;
+	box-shadow: rgba(255, 255, 255, 0.6) 2px 2px 20px;
+}
+
+#overlay-caption {
+	color: white;
+	margin-top: 1vw;
+	font-size: 1.2em;
+}
+
+.close-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 2vw;
+	right: 2vw;
+	font-size: 2em;
+	color: white;
+	border: white 3px solid;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.close-btn:hover {
+	box-shadow: rgba(255, 255, 255, 0.6) 2px 2px 20px;
+}
+
 .video-container {
-	margin: 3vw;
+    margin: 3vw;
 	width: 60%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	box-shadow: rgba(0, 0, 0, 0.6) 0.2vw 0.2vw 2vw;
+}
+
+.video-container figcaption {
+	margin-top: 5px;
+	font-size: 0.9em;
+	color: var(--text-color);
+	text-align: center;
 }
 
 #player {
-	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.6) 0.2vw 0.2vw 2vw;
+    border-radius: 5px;
 }
 
 /* Form */
@@ -284,6 +359,10 @@ textarea {
 @media screen and (max-width: 1000px) {
 	body {
 		font-size: 2vw;
+	}
+
+	.nav-item {
+		font-size: 1.3em;
 	}
 
 	.home {
